@@ -1,0 +1,21 @@
+* SPICE3 file created from or2.ext - technology: scmos
+
+.option scale=1u
+
+M1000 inv b d1s2 inv pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1001 vss b inv Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 d1s2 a inv inv pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 out inv inv inv pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 inv a vss Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 out inv vss Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 vss Gnd 4.42fF
+C1 out Gnd 2.16fF
+C2 b Gnd 5.71fF
+C3 a Gnd 5.71fF
+C4 inv Gnd 9.94fF
