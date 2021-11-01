@@ -1,0 +1,32 @@
+* SPICE3 file created from dlatch.ext - technology: scmos
+
+.option scale=1u
+
+M1000 vdd a_46_35# Q w_31_49# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1001 Q_bar a_42_n19# a_34_n29# Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 a_38_25# D_bar vss Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 Q a_46_35# a_38_25# Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 D_bar in vdd vdd pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 D_bar in vss Gnd nfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 a_34_n29# in vss Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 Q_bar in vdd w_27_n5# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 Q D_bar vdd w_31_49# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 vdd a_42_n19# Q_bar w_27_n5# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 Q_bar Gnd 7.71fF
+C1 a_42_n19# Gnd 6.35fF
+C2 vss Gnd 23.70fF
+C3 in Gnd 20.50fF
+C4 Q Gnd 9.64fF
+C5 a_46_35# Gnd 6.35fF
+C6 D_bar Gnd 13.16fF
+C7 vdd Gnd 14.24fF

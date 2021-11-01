@@ -1,0 +1,46 @@
+timestamp 1635798489
+version 8.3
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "a_34_n29#" 49 0 34 -29 ndiff 66 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q_bar" 164 7707 34 -3 pdiff 32 24 66 34 0 0 0 0 0 0 0 0 138 96 226 156 0 0
+node "a_42_n19#" 440 6348 42 -19 pc 0 0 0 0 86 84 0 0 0 0 0 0 16 16 0 0 0 0
+node "a_38_25#" 49 0 38 25 ndiff 66 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vss" 896 23696 2 8 ndc 86 68 48 48 0 0 0 0 0 0 0 0 567 382 128 90 0 0
+node "in" 777 20502 5 15 pc 0 0 0 0 146 142 0 0 0 0 0 0 242 166 0 0 0 0
+node "Q" 164 9645 38 51 pdiff 32 24 66 34 0 0 0 0 0 0 0 0 138 96 328 224 0 0
+node "a_46_35#" 440 6348 46 35 pc 0 0 0 0 86 84 0 0 0 0 0 0 16 16 0 0 0 0
+node "D_bar" 601 13163 10 9 ndiff 22 20 28 22 86 84 0 0 0 0 0 0 207 140 0 0 0 0
+node "w_27_n5#" 5923 0 27 -5 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 286 74
+node "vdd" 4624 14241 0 22 nw 48 48 154 118 0 0 0 0 0 0 0 0 413 284 342 232 320 72
+node "w_31_49#" 5923 0 31 49 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 286 74
+cap "vdd" "D_bar" 1063
+cap "w_31_49#" "a_46_35#" 1510
+cap "in" "vss" 405
+cap "w_27_n5#" "in" 1510
+cap "vdd" "w_27_n5#" 846
+cap "w_31_49#" "D_bar" 1510
+cap "vss" "Q_bar" 405
+cap "Q" "vss" 405
+cap "w_27_n5#" "Q_bar" 282
+cap "vdd" "in" 1194
+cap "w_27_n5#" "a_42_n19#" 1510
+cap "Q" "Q_bar" 810
+cap "w_31_49#" "vdd" 846
+cap "w_31_49#" "Q" 282
+cap "a_42_n19#" "Q_bar" 180
+cap "Q" "a_42_n19#" 327
+cap "a_46_35#" "Q_bar" 327
+cap "a_46_35#" "Q" 180
+device mosfet nfet 45 -29 46 -28 2 6 "Gnd!" "a_42_n19#" 4 0 "a_34_n29#" 6 0 "Q_bar" 6 0
+device mosfet nfet 32 -29 33 -28 2 6 "Gnd!" "in" 4 0 "vss" 6 0 "a_34_n29#" 6 0
+device mosfet pfet 45 -3 46 -2 2 6 "w_27_n5#" "a_42_n19#" 4 0 "Q_bar" 6 0 "vdd" 6 0
+device mosfet pfet 32 -3 33 -2 2 6 "w_27_n5#" "in" 4 0 "vdd" 6 0 "Q_bar" 6 0
+device mosfet nfet 8 9 9 10 2 3 "Gnd!" "in" 4 0 "vss" 3 0 "D_bar" 3 0
+device mosfet nfet 49 25 50 26 2 6 "Gnd!" "a_46_35#" 4 0 "a_38_25#" 6 0 "Q" 6 0
+device mosfet nfet 36 25 37 26 2 6 "Gnd!" "D_bar" 4 0 "vss" 6 0 "a_38_25#" 6 0
+device mosfet pfet 8 23 9 24 2 6 "vdd" "in" 4 0 "vdd" 6 0 "D_bar" 6 0
+device mosfet pfet 49 51 50 52 2 6 "w_31_49#" "a_46_35#" 4 0 "Q" 6 0 "vdd" 6 0
+device mosfet pfet 36 51 37 52 2 6 "w_31_49#" "D_bar" 4 0 "vdd" 6 0 "Q" 6 0
