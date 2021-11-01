@@ -1,0 +1,54 @@
+* SPICE3 file created from dff.ext - technology: scmos
+
+.option scale=1u
+
+M1000 Q_bar nand24 vdd w_48_32# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1001 a_55_64# nand13 vss Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 vdd D_bar nand24 w_1_32# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 vdd a_63_18# Q_bar w_48_32# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 nand13 a_16_74# a_8_64# Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 Q a_63_76# a_55_64# Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 nand24 D_bar a_8_8# Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 nand13 clk vdd w_1_88# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 a_55_3# nand24 vss Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 Q_bar a_63_18# a_55_3# Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 inv in vdd vdd pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 nand24 clk vdd w_1_32# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 a_8_64# clk vss Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1013 Q nand13 vdd w_48_88# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1014 vdd a_16_74# nand13 w_1_88# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1015 vdd a_63_76# Q w_48_88# pfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 a_8_8# clk vss Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1017 inv in vss Gnd nfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 D Gnd 3.02fF **FLOATING
+C1 Q_bar Gnd 8.37fF
+C2 a_63_18# Gnd 7.54fF
+C3 nand24 Gnd 14.82fF
+C4 D_bar Gnd 6.35fF
+C5 vss Gnd 33.07fF
+C6 inv Gnd 8.56fF
+C7 in Gnd 5.87fF
+C8 Q Gnd 9.41fF
+C9 a_63_76# Gnd 6.35fF
+C10 nand13 Gnd 13.63fF
+C11 a_16_74# Gnd 6.35fF
+C12 clk Gnd 22.99fF
+C13 vdd Gnd 32.00fF

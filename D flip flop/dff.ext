@@ -1,0 +1,80 @@
+timestamp 1635803080
+version 8.3
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "D" 1 3021 -46 74 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 192 134 0 0
+node "a_55_3#" 49 0 55 3 ndiff 66 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_8_8#" 49 0 8 8 ndiff 66 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q_bar" 164 8372 55 34 pdiff 32 24 66 34 0 0 0 0 0 0 0 0 157 108 202 140 0 0
+node "a_63_18#" 500 7538 63 18 pc 0 0 0 0 96 94 0 0 0 0 0 0 16 16 0 0 0 0
+node "nand24" 664 14823 8 34 pdiff 32 24 66 34 96 94 0 0 0 0 0 0 219 150 0 0 0 0
+node "D_bar" 440 6348 16 18 pc 0 0 0 0 86 84 0 0 0 0 0 0 16 16 0 0 0 0
+node "a_55_64#" 49 0 55 64 ndiff 66 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_8_64#" 49 0 8 64 ndiff 66 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vss" 1378 33068 -53 57 ndc 150 116 64 64 0 0 0 0 0 0 0 0 797 534 185 128 0 0
+node "inv" 161 8557 -45 58 ndiff 22 20 28 22 0 0 0 0 0 0 0 0 108 74 322 220 0 0
+node "in" 380 5872 -49 73 pc 0 0 0 0 72 72 0 0 0 0 0 0 16 16 0 0 0 0
+node "Q" 164 9414 55 90 pdiff 32 24 66 34 0 0 0 0 0 0 0 0 144 100 292 200 0 0
+node "a_63_76#" 440 6348 63 76 pc 0 0 0 0 86 84 0 0 0 0 0 0 16 16 0 0 0 0
+node "nand13" 604 13633 8 90 pdiff 32 24 66 34 86 84 0 0 0 0 0 0 219 150 0 0 0 0
+node "a_16_74#" 440 6348 16 74 pc 0 0 0 0 86 84 0 0 0 0 0 0 16 16 0 0 0 0
+node "clk" 932 22989 3 23 pc 0 0 0 0 172 168 0 0 0 0 0 0 251 172 0 0 0 0
+node "w_48_32#" 5923 0 48 32 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 286 74
+node "w_1_32#" 5923 0 1 32 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 286 74
+node "w_48_88#" 5923 0 48 88 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 286 74
+node "w_1_88#" 5923 0 1 88 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 286 74
+node "vdd" 5914 31997 -55 79 nw 80 80 282 214 0 0 0 0 0 0 0 0 980 652 188 130 320 72
+cap "inv" "D" 405
+cap "D_bar" "nand24" 180
+cap "w_48_32#" "a_63_18#" 1510
+cap "clk" "w_1_88#" 1510
+cap "vdd" "in" 1194
+cap "a_63_76#" "Q_bar" 192
+cap "w_48_32#" "Q_bar" 282
+cap "vdd" "vss" 810
+cap "nand13" "w_1_88#" 282
+cap "vss" "nand24" 405
+cap "vdd" "w_1_32#" 846
+cap "a_16_74#" "D" 270
+cap "a_63_76#" "w_48_88#" 1510
+cap "w_1_32#" "nand24" 282
+cap "vdd" "w_1_88#" 846
+cap "in" "D" 135
+cap "w_1_32#" "D_bar" 1510
+cap "a_63_18#" "Q" 327
+cap "w_1_88#" "a_16_74#" 1510
+cap "clk" "inv" 114
+cap "Q" "Q_bar" 810
+cap "a_63_76#" "Q" 180
+cap "nand13" "w_48_88#" 1510
+cap "vdd" "w_48_32#" 846
+cap "w_48_32#" "nand24" 1510
+cap "Q" "w_48_88#" 282
+cap "vdd" "w_48_88#" 846
+cap "vdd" "inv" 658
+cap "vdd" "nand13" 405
+cap "inv" "D_bar" 135
+cap "nand13" "a_16_74#" 180
+cap "clk" "D" 519
+cap "a_63_18#" "Q_bar" 180
+cap "w_1_32#" "clk" 1510
+device mosfet nfet 66 3 67 4 2 6 "Gnd!" "a_63_18#" 4 0 "a_55_3#" 6 0 "Q_bar" 6 0
+device mosfet nfet 53 3 54 4 2 6 "Gnd!" "nand24" 4 0 "vss" 6 0 "a_55_3#" 6 0
+device mosfet nfet 19 8 20 9 2 6 "Gnd!" "D_bar" 4 0 "a_8_8#" 6 0 "nand24" 6 0
+device mosfet nfet 6 8 7 9 2 6 "Gnd!" "clk" 4 0 "vss" 6 0 "a_8_8#" 6 0
+device mosfet pfet 66 34 67 35 2 6 "w_48_32#" "a_63_18#" 4 0 "Q_bar" 6 0 "vdd" 6 0
+device mosfet pfet 53 34 54 35 2 6 "w_48_32#" "nand24" 4 0 "vdd" 6 0 "Q_bar" 6 0
+device mosfet pfet 19 34 20 35 2 6 "w_1_32#" "D_bar" 4 0 "nand24" 6 0 "vdd" 6 0
+device mosfet pfet 6 34 7 35 2 6 "w_1_32#" "clk" 4 0 "vdd" 6 0 "nand24" 6 0
+device mosfet nfet -47 58 -46 59 2 3 "Gnd!" "in" 4 0 "vss" 3 0 "inv" 3 0
+device mosfet nfet 66 64 67 65 2 6 "Gnd!" "a_63_76#" 4 0 "a_55_64#" 6 0 "Q" 6 0
+device mosfet nfet 53 64 54 65 2 6 "Gnd!" "nand13" 4 0 "vss" 6 0 "a_55_64#" 6 0
+device mosfet nfet 19 64 20 65 2 6 "Gnd!" "a_16_74#" 4 0 "a_8_64#" 6 0 "nand13" 6 0
+device mosfet nfet 6 64 7 65 2 6 "Gnd!" "clk" 4 0 "vss" 6 0 "a_8_64#" 6 0
+device mosfet pfet -47 80 -46 81 2 6 "vdd" "in" 4 0 "vdd" 6 0 "inv" 6 0
+device mosfet pfet 66 90 67 91 2 6 "w_48_88#" "a_63_76#" 4 0 "Q" 6 0 "vdd" 6 0
+device mosfet pfet 53 90 54 91 2 6 "w_48_88#" "nand13" 4 0 "vdd" 6 0 "Q" 6 0
+device mosfet pfet 19 90 20 91 2 6 "w_1_88#" "a_16_74#" 4 0 "nand13" 6 0 "vdd" 6 0
+device mosfet pfet 6 90 7 91 2 6 "w_1_88#" "clk" 4 0 "vdd" 6 0 "nand13" 6 0
