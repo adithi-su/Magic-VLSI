@@ -1,0 +1,54 @@
+timestamp 1636298885
+version 8.3
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "a_75_8#" 160 0 75 8 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "carry" 160 1598 146 8 ndiff 22 20 28 22 0 0 0 0 0 0 0 0 80 56 0 0 0 0
+node "a_13_34#" 160 0 13 34 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_133_47#" 160 0 133 47 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_75_57#" 160 0 75 57 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sum" 472 4512 133 67 pdiff 19 18 52 44 0 0 0 0 0 0 0 0 168 116 0 0 0 0
+node "a_75_28#" 830 20843 75 28 pdiff 19 18 52 44 72 70 0 0 0 0 0 0 421 284 0 0 0 0
+node "Gnd" 1834 33158 6 34 ndc 98 92 96 96 0 0 0 0 0 0 0 0 816 552 256 180 0 0
+node "B" 766 30265 28 41 pc 0 0 0 0 144 140 0 0 0 0 0 0 455 308 0 0 0 0
+node "a_75_77#" 829 13694 75 77 pdiff 19 18 52 44 72 70 0 0 0 0 0 0 268 182 0 0 0 0
+node "in" 1573 44146 13 54 pdiff 19 18 52 44 200 196 0 0 0 0 0 0 599 406 440 298 0 0
+node "A" 765 24286 8 48 pc 0 0 0 0 144 140 0 0 0 0 0 0 326 222 0 0 0 0
+node "Vdd" 52290 30036 6 52 nw 160 160 234 198 0 0 0 0 0 0 0 0 1301 870 256 180 2496 464
+cap "Vdd" "a_75_77#" 2424
+cap "in" "B" 765
+cap "Vdd" "sum" 752
+cap "B" "a_75_28#" 180
+cap "Vdd" "carry" 658
+cap "Vdd" "in" 5455
+cap "A" "B" 180
+cap "in" "a_75_77#" 180
+cap "Vdd" "a_75_28#" 2184
+cap "B" "Gnd" 810
+cap "a_75_77#" "a_75_28#" 180
+cap "a_75_28#" "sum" 180
+cap "Vdd" "A" 4154
+cap "Vdd" "Gnd" 405
+cap "A" "in" 180
+cap "Vdd" "B" 2864
+cap "in" "Gnd" 1215
+device mosfet nfet 144 8 145 9 2 3 "Gnd!" "in" 4 0 "Gnd" 3 0 "carry" 3 0
+device mosfet nfet 93 8 94 9 2 3 "Gnd!" "B" 4 0 "a_75_8#" 3 0 "a_75_28#" 3 0
+device mosfet nfet 73 8 74 9 2 3 "Gnd!" "in" 4 0 "Gnd" 3 0 "a_75_8#" 3 0
+device mosfet pfet 144 22 145 23 2 6 "Vdd" "in" 4 0 "Vdd" 6 0 "carry" 6 0
+device mosfet pfet 93 28 94 29 2 6 "Vdd" "B" 4 0 "Vdd" 6 0 "a_75_28#" 6 0
+device mosfet pfet 73 28 74 29 2 6 "Vdd" "in" 4 0 "Vdd" 6 0 "a_75_28#" 6 0
+device mosfet nfet 31 34 32 35 2 3 "Gnd!" "B" 4 0 "a_13_34#" 3 0 "in" 3 0
+device mosfet nfet 11 34 12 35 2 3 "Gnd!" "A" 4 0 "Gnd" 3 0 "a_13_34#" 3 0
+device mosfet nfet 151 47 152 48 2 3 "Gnd!" "a_75_28#" 4 0 "a_133_47#" 3 0 "sum" 3 0
+device mosfet nfet 131 47 132 48 2 3 "Gnd!" "a_75_77#" 4 0 "Gnd" 3 0 "a_133_47#" 3 0
+device mosfet nfet 93 57 94 58 2 3 "Gnd!" "in" 4 0 "a_75_57#" 3 0 "a_75_77#" 3 0
+device mosfet nfet 73 57 74 58 2 3 "Gnd!" "A" 4 0 "Gnd" 3 0 "a_75_57#" 3 0
+device mosfet pfet 151 67 152 68 2 6 "Vdd" "a_75_28#" 4 0 "Vdd" 6 0 "sum" 6 0
+device mosfet pfet 131 67 132 68 2 6 "Vdd" "a_75_77#" 4 0 "Vdd" 6 0 "sum" 6 0
+device mosfet pfet 31 54 32 55 2 6 "Vdd" "B" 4 0 "Vdd" 6 0 "in" 6 0
+device mosfet pfet 11 54 12 55 2 6 "Vdd" "A" 4 0 "Vdd" 6 0 "in" 6 0
+device mosfet pfet 93 77 94 78 2 6 "Vdd" "in" 4 0 "Vdd" 6 0 "a_75_77#" 6 0
+device mosfet pfet 73 77 74 78 2 6 "Vdd" "A" 4 0 "Vdd" 6 0 "a_75_77#" 6 0
