@@ -1,0 +1,45 @@
+| units: 100 tech: scmos format: MIT
+p in Vdd a_75_28# 2 6 73 28
+p B Vdd in 2 6 31 54
+n in a_75_57# a_75_77# 2 3 93 57
+p A Vdd a_75_77# 2 6 73 77
+n a_75_28# a_133_47# sum 2 3 151 47
+p a_75_77# Vdd sum 2 6 131 67
+n A Gnd a_13_34# 2 3 11 34
+p B Vdd a_75_28# 2 6 93 28
+n in Gnd carry 2 3 144 8
+p in Vdd a_75_77# 2 6 93 77
+p a_75_28# Vdd sum 2 6 151 67
+n B a_13_34# in 2 3 31 34
+p A Vdd in 2 6 11 54
+n A Gnd a_75_57# 2 3 73 57
+n B a_75_8# a_75_28# 2 3 93 8
+n a_75_77# Gnd a_133_47# 2 3 131 47
+n in Gnd a_75_8# 2 3 73 8
+p in Vdd carry 2 6 144 22
+C Vdd a_75_77# 2.42
+C Vdd in 5.46
+C Vdd A 4.15
+C Vdd a_75_28# 2.18
+C Vdd B 2.86
+R a_75_8# 160
+R carry 160
+R a_13_34# 160
+R a_133_47# 160
+R a_75_57# 160
+C sum GND 4.51
+R sum 472
+C a_75_28# GND 20.84
+R a_75_28# 830
+C Gnd GND 33.16
+R Gnd 1834
+C B GND 30.27
+R B 766
+C a_75_77# GND 13.69
+R a_75_77# 829
+C in GND 44.15
+R in 1573
+C A GND 24.29
+R A 765
+C Vdd GND 30.04
+R Vdd 52290
