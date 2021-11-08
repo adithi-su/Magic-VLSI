@@ -1,0 +1,111 @@
+timestamp 1636302422
+version 8.3
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "a_255_19#" 160 0 255 19 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_75_19#" 160 0 75 19 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "C_out" 137 2538 391 18 ndiff 24 20 34 24 0 0 0 0 0 0 0 0 92 66 0 0 0 0
+node "a_355_41#" 139 0 355 41 pdiff 0 0 84 40 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_355_18#" 667 12358 355 18 ndiff 38 36 28 22 74 74 0 0 0 0 0 0 214 146 0 0 0 0
+node "a_326_19#" 553 11972 326 19 ndiff 22 20 28 22 78 76 0 0 0 0 0 0 195 132 0 0 0 0
+node "a_146_19#" 556 38715 146 19 ndiff 22 20 28 22 78 76 0 0 0 0 0 0 692 472 223 158 0 0
+node "a_193_45#" 160 0 193 45 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_313_58#" 160 0 313 58 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_13_45#" 160 0 13 45 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_133_58#" 160 0 133 58 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_255_68#" 160 0 255 68 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sum" 472 4512 313 78 pdiff 19 18 52 44 0 0 0 0 0 0 0 0 168 116 0 0 0 0
+node "a_255_39#" 830 20843 255 39 pdiff 19 18 52 44 72 70 0 0 0 0 0 0 421 284 0 0 0 0
+node "a_75_68#" 160 0 75 68 ndiff 54 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_133_78#" 1239 38138 133 78 pdiff 19 18 52 44 144 140 0 0 0 0 0 0 646 434 173 118 0 0
+node "a_75_39#" 830 20843 75 39 pdiff 19 18 52 44 72 70 0 0 0 0 0 0 421 284 0 0 0 0
+node "Gnd" 4423 79852 6 45 ndc 258 240 208 208 0 0 0 0 0 0 0 0 1984 1328 512 360 0 0
+node "in_2" 766 30265 28 52 pc 0 0 0 0 144 140 0 0 0 0 0 0 455 308 0 0 0 0
+node "a_255_88#" 829 13694 255 88 pdiff 19 18 52 44 72 70 0 0 0 0 0 0 268 182 0 0 0 0
+node "a_75_88#" 829 13694 75 88 pdiff 19 18 52 44 72 70 0 0 0 0 0 0 268 182 0 0 0 0
+node "a_193_65#" 1573 44146 193 65 pdiff 19 18 52 44 200 196 0 0 0 0 0 0 599 406 440 298 0 0
+node "C_in" 765 24286 188 59 pc 0 0 0 0 144 140 0 0 0 0 0 0 326 222 0 0 0 0
+node "a_13_65#" 1573 44146 13 65 pdiff 19 18 52 44 200 196 0 0 0 0 0 0 599 406 440 298 0 0
+node "in_1" 765 24286 8 59 pc 0 0 0 0 144 140 0 0 0 0 0 0 326 222 0 0 0 0
+node "Vdd" 124615 65148 6 63 nw 352 352 528 442 0 0 0 0 0 0 0 0 2897 1928 512 360 5727 1056
+cap "Vdd" "a_193_65#" 5455
+cap "Vdd" "C_in" 4154
+cap "in_2" "a_13_65#" 765
+cap "Gnd" "a_193_65#" 1215
+cap "a_326_19#" "a_355_18#" 180
+cap "a_255_88#" "a_255_39#" 180
+cap "a_193_65#" "C_in" 180
+cap "Vdd" "a_355_18#" 1382
+cap "a_146_19#" "a_326_19#" 180
+cap "a_255_39#" "a_133_78#" 180
+cap "in_2" "a_75_39#" 180
+cap "Vdd" "a_146_19#" 1852
+cap "a_75_39#" "a_133_78#" 180
+cap "a_146_19#" "Gnd" 810
+cap "Vdd" "a_255_88#" 2424
+cap "Vdd" "in_2" 2864
+cap "a_75_88#" "a_13_65#" 180
+cap "a_255_39#" "sum" 180
+cap "Vdd" "a_133_78#" 4021
+cap "in_2" "in_1" 180
+cap "Vdd" "a_13_65#" 5455
+cap "a_255_88#" "a_193_65#" 180
+cap "in_2" "Gnd" 810
+cap "in_1" "a_13_65#" 180
+cap "Gnd" "a_133_78#" 810
+cap "Gnd" "a_13_65#" 1215
+cap "a_133_78#" "a_193_65#" 765
+cap "a_75_39#" "a_75_88#" 180
+cap "Vdd" "a_255_39#" 2184
+cap "a_133_78#" "C_in" 180
+cap "Vdd" "sum" 752
+cap "Vdd" "a_75_39#" 2184
+cap "Vdd" "a_75_88#" 2424
+cap "Vdd" "C_out" 188
+cap "Vdd" "a_326_19#" 2275
+cap "Vdd" "in_1" 4154
+cap "Vdd" "Gnd" 810
+device mosfet nfet 389 18 390 19 2 4 "Gnd!" "a_355_18#" 4 0 "Gnd" 4 0 "C_out" 4 0
+device mosfet nfet 369 18 370 19 2 3 "Gnd!" "a_326_19#" 4 0 "Gnd" 3 0 "a_355_18#" 3 0
+device mosfet nfet 353 18 354 19 2 3 "Gnd!" "a_146_19#" 4 0 "Gnd" 3 0 "a_355_18#" 3 0
+device mosfet nfet 324 19 325 20 2 3 "Gnd!" "a_193_65#" 4 0 "Gnd" 3 0 "a_326_19#" 3 0
+device mosfet nfet 273 19 274 20 2 3 "Gnd!" "a_133_78#" 4 0 "a_255_19#" 3 0 "a_255_39#" 3 0
+device mosfet nfet 253 19 254 20 2 3 "Gnd!" "a_193_65#" 4 0 "Gnd" 3 0 "a_255_19#" 3 0
+device mosfet pfet 324 33 325 34 2 6 "Vdd" "a_193_65#" 4 0 "Vdd" 6 0 "a_326_19#" 6 0
+device mosfet nfet 144 19 145 20 2 3 "Gnd!" "a_13_65#" 4 0 "Gnd" 3 0 "a_146_19#" 3 0
+device mosfet nfet 93 19 94 20 2 3 "Gnd!" "in_2" 4 0 "a_75_19#" 3 0 "a_75_39#" 3 0
+device mosfet nfet 73 19 74 20 2 3 "Gnd!" "a_13_65#" 4 0 "Gnd" 3 0 "a_75_19#" 3 0
+device mosfet pfet 144 33 145 34 2 6 "Vdd" "a_13_65#" 4 0 "Vdd" 6 0 "a_146_19#" 6 0
+device mosfet pfet 389 41 390 42 2 6 "Vdd" "a_355_18#" 4 0 "Vdd" 6 0 "C_out" 6 0
+device mosfet pfet 369 41 370 42 2 6 "Vdd" "a_326_19#" 4 0 "a_355_41#" 6 0 "a_355_18#" 6 0
+device mosfet pfet 353 41 354 42 2 6 "Vdd" "a_146_19#" 4 0 "Vdd" 6 0 "a_355_41#" 6 0
+device mosfet pfet 273 39 274 40 2 6 "Vdd" "a_133_78#" 4 0 "Vdd" 6 0 "a_255_39#" 6 0
+device mosfet pfet 253 39 254 40 2 6 "Vdd" "a_193_65#" 4 0 "Vdd" 6 0 "a_255_39#" 6 0
+device mosfet nfet 211 45 212 46 2 3 "Gnd!" "a_133_78#" 4 0 "a_193_45#" 3 0 "a_193_65#" 3 0
+device mosfet nfet 191 45 192 46 2 3 "Gnd!" "C_in" 4 0 "Gnd" 3 0 "a_193_45#" 3 0
+device mosfet nfet 331 58 332 59 2 3 "Gnd!" "a_255_39#" 4 0 "a_313_58#" 3 0 "sum" 3 0
+device mosfet nfet 311 58 312 59 2 3 "Gnd!" "a_255_88#" 4 0 "Gnd" 3 0 "a_313_58#" 3 0
+device mosfet pfet 93 39 94 40 2 6 "Vdd" "in_2" 4 0 "Vdd" 6 0 "a_75_39#" 6 0
+device mosfet pfet 73 39 74 40 2 6 "Vdd" "a_13_65#" 4 0 "Vdd" 6 0 "a_75_39#" 6 0
+device mosfet nfet 31 45 32 46 2 3 "Gnd!" "in_2" 4 0 "a_13_45#" 3 0 "a_13_65#" 3 0
+device mosfet nfet 11 45 12 46 2 3 "Gnd!" "in_1" 4 0 "Gnd" 3 0 "a_13_45#" 3 0
+device mosfet nfet 151 58 152 59 2 3 "Gnd!" "a_75_39#" 4 0 "a_133_58#" 3 0 "a_133_78#" 3 0
+device mosfet nfet 131 58 132 59 2 3 "Gnd!" "a_75_88#" 4 0 "Gnd" 3 0 "a_133_58#" 3 0
+device mosfet nfet 273 68 274 69 2 3 "Gnd!" "a_193_65#" 4 0 "a_255_68#" 3 0 "a_255_88#" 3 0
+device mosfet nfet 253 68 254 69 2 3 "Gnd!" "C_in" 4 0 "Gnd" 3 0 "a_255_68#" 3 0
+device mosfet pfet 331 78 332 79 2 6 "Vdd" "a_255_39#" 4 0 "Vdd" 6 0 "sum" 6 0
+device mosfet pfet 311 78 312 79 2 6 "Vdd" "a_255_88#" 4 0 "Vdd" 6 0 "sum" 6 0
+device mosfet pfet 211 65 212 66 2 6 "Vdd" "a_133_78#" 4 0 "Vdd" 6 0 "a_193_65#" 6 0
+device mosfet pfet 191 65 192 66 2 6 "Vdd" "C_in" 4 0 "Vdd" 6 0 "a_193_65#" 6 0
+device mosfet nfet 93 68 94 69 2 3 "Gnd!" "a_13_65#" 4 0 "a_75_68#" 3 0 "a_75_88#" 3 0
+device mosfet nfet 73 68 74 69 2 3 "Gnd!" "in_1" 4 0 "Gnd" 3 0 "a_75_68#" 3 0
+device mosfet pfet 151 78 152 79 2 6 "Vdd" "a_75_39#" 4 0 "Vdd" 6 0 "a_133_78#" 6 0
+device mosfet pfet 131 78 132 79 2 6 "Vdd" "a_75_88#" 4 0 "Vdd" 6 0 "a_133_78#" 6 0
+device mosfet pfet 31 65 32 66 2 6 "Vdd" "in_2" 4 0 "Vdd" 6 0 "a_13_65#" 6 0
+device mosfet pfet 11 65 12 66 2 6 "Vdd" "in_1" 4 0 "Vdd" 6 0 "a_13_65#" 6 0
+device mosfet pfet 273 88 274 89 2 6 "Vdd" "a_193_65#" 4 0 "Vdd" 6 0 "a_255_88#" 6 0
+device mosfet pfet 253 88 254 89 2 6 "Vdd" "C_in" 4 0 "Vdd" 6 0 "a_255_88#" 6 0
+device mosfet pfet 93 88 94 89 2 6 "Vdd" "a_13_65#" 4 0 "Vdd" 6 0 "a_75_88#" 6 0
+device mosfet pfet 73 88 74 89 2 6 "Vdd" "in_1" 4 0 "Vdd" 6 0 "a_75_88#" 6 0
